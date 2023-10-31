@@ -4,6 +4,10 @@ const https = require("https");
 const { stdout } = require("process");
 const urlModule = require("url");
 const urls = process.argv.slice(2);
+
+if(urls.length === 9){
+  console.log('9 baar');
+}
 if (urls.length === 0) {
   console.error("Error: URLs array is empty. Please provide URLs to download.");
   process.exit(1);
